@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align columns to the top */
+            height: 100vh;
+        }
+        .column {
+            text-align: center;
+        }
+        .column a {
+            display: block;
+            width: 250px;
+            height: 50px;
+            line-height: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            background: #333;
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 3px solid #333;
+            transition: all .35s;
+            margin: 5px;
+        }
+        .icon {
+            width: 50px;
+            height: 50px;
+            border: 3px solid transparent;
+            position: absolute;
+            transform: rotate(45deg);
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .icon svg {
+            width: 30px;
+            position: absolute;
+            top: calc(50% - 15px);
+            left: calc(50% - 15px);
+            transform: rotate(-45deg);
+            fill: #2ecc71;
+        }
+        .column a:hover {
+            width: 200px;
+            border: 3px solid #2ecc71;
+            background: transparent;
+            color: #2ecc71;
+        }
+        .column a:hover + .icon {
+            border: 3px solid #2ecc71;
+            right: -25%;
+        }
+        @media (max-width: 768px) {
+            .column {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .column a {
+                width: 100%;
+            }
+
+            .icon {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="column">
+        <a href="bstask1.html">Bootstrap Task 1</a>
+        <a href="bstask2.html">Bootstrap Task 2</a>
+        <a href="bstask3.html">Bootstrap Task 3</a>
+        <a href="bstask4.html">Bootstrap Task 4</a>
+        <a href="bstask5.html">Bootstrap Task 5</a>
+        <a href="bstask6.html">Bootstrap Task 6</a>
+    </div>
+    <div class="column">
+        <a href="javascript1.html">JavaScript Task 1</a>
+        <a href="javascript2.html">JavaScript Task 2</a>
+        <a href="javascript3.html">JavaScript Task 3</a>
+        <a href="javascript4.html">JavaScript Task 4</a>
+        <a href="javascript5.html">JavaScript Task 5</a>
+        <a href="javascript6.html">JavaScript Task 6</a>
+        <a href="javascript7.html">JavaScript Task 7</a>
+        <a href="javascript8.html">JavaScript Task 8</a>
+    </div>
+</body>
+</html>
